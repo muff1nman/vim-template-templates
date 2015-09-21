@@ -1,0 +1,46 @@
+% vim:ft=tex:
+%
+\documentclass[12pt]{article}
+
+% set margins
+\usepackage[margin=1in]{geometry}
+% UTF-8 encoding
+\usepackage[utf8]{inputenc}
+% Times New Roman
+\usepackage{times}
+% double spacing
+\usepackage{setspace}
+\doublespacing
+\usepackage [english]{babel}
+% Be able to use the standard "
+\usepackage [autostyle, english = american]{csquotes}
+\MakeOuterQuote{"}
+% Not sure why I need this
+\usepackage{graphicx}
+
+\title{
+	%FILE%
+}
+\author{
+	%USER% --- \texttt{%MAIL%}
+}
+
+% Reference title. TODO change the maketitle command
+\makeatletter
+\let\inserttitle\@title
+\makeatother
+
+\begin{document}
+\begin{flushleft}
+
+\begin{center}
+	\inserttitle
+\end{center}
+
+% Paragraph indents
+\setlength{\parindent}{0.5in}
+
+%HERE%
+
+\end{flushleft}
+\end{document}
